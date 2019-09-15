@@ -6,20 +6,18 @@ class ListNode:
 
 class Solution:
     def printListFromTailToHead(self, listNode):
-        reslut = []
+        result = []
         head = listNode
         while head:
-            reslut.insert(0, head.val)
+            result.insert(0, head.val)
             head = head.next
-        return reslut
-
+        return result
 
 a = ListNode(1)
 b = ListNode(2)
 c = ListNode(3)
 a.next = b
 b.next = c
-
 
 solution = Solution()
 print(solution.printListFromTailToHead(a))
